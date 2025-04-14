@@ -1,0 +1,745 @@
+<!doctype html>
+<!-- Kateryna Kolobova — Практика №7— Створення посадкової сторінки -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Практика №7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui>"
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700;800&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/normalize.css-master/normalize.css-master/normalize.css">
+        <link rel="stylesheet" href="style7.css">
+
+        <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+        <link rel="apple-icon" href="img/favicon/apple-icon-180x180.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+
+        <meta name="description" content="Це навчальна сторінка з курсу «Основи фронтенду» від Креативної Практики">
+        <meta property="og:title" content="Курс з фронтенду від Креативної Практики">
+        <meta property="og:image" content="OG-Cover.png">
+        <meta propert="og:image:width" content="1200">
+        <meta propert="og:image:height" content="630">
+        <meta propert="og:image:type" content="inage/png">
+        <meta propert="twitter:card" content="summary_large_image">
+        <meta propert="twitter:image" content="OG-Cover.png">
+
+        <style>
+
+            .ui-outline {
+                border: 1px solid #ECECEC;
+            }
+
+            .ui-colors {
+                grid-auto-rows: minmax(140px, auto);
+            }
+
+            .ui-section {
+                margin-bottom: 7rem;
+                
+            }
+            @media screen and (min-width: 721px) {
+                .ui-section {
+                    margin-bottom: 10rem;
+                }
+            }
+
+            .ui-grid > * {
+                color: var(--color-Red);
+                background: var(--color-LightestBlue);
+                padding: 1rem;
+            }
+
+            @media screen and (min-width: 721px) {
+                .ui-grid > * {
+                    padding: 2rem;
+                }
+            }
+
+            .iu-icons > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header class="layout-header">
+            <div class="layout-container">
+
+                <div class="header-wrapper">
+                    <a href="https://cases.media/creativepractice" class="header-logo">
+                        <img src="img/newImages/logo_white.png" width="126" height="56" alt="Creative Practice">
+                    </a>
+
+                    <nav class="header-menu">
+                        <ul class="nav">
+                            <li class="d-none d-desk-block">
+                                <a href="#about">Про курс</a>
+                            </li>
+
+                            <li class="d-none d-desk-block">
+                                <a href="#lecturer">Хто викладає</a>
+                            </li>
+
+                            <li class="dropdown d-none d-desk-block">
+                                <a href="#program">Програма курсу</a>
+
+                                <div class="dropdown-wrapper">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#program-theory">Теорія</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#program-practice">Практика</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="dropdown d-desk-none">
+                                <a href="#about">Меню</a>
+
+                                <div class="dropdown-wrapper dd-left dd-tab-right">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#about">Про курс</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#lecturer">Хто викладає</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#program">Програма</a>
+                                        </li>
+
+                                        <li class="btn d-tab-none">
+                                            <div>
+                                                <a href="#register" class="btn-purple">Зареєструватись</a>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="btn d-none d-tab-block">
+                                <div>
+                                    <a href="#register" class="btn-purple">Зареєструватись</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="layout-content">
+
+            <section class="block-intro bg-BackgroundBlue c-white">
+                <div class="block-intro-wrapper py-4 py-tab-3 py-desk-6">
+
+                    <div class="layout-container">
+
+                        <div class="grid grid-cols-1 grid-cols-tab-8 grid-cols-desk-2
+                        align-items-center">
+                            <div class="col-start-tab-2 col-span-tab-6 
+                            col-start-desk-1 col-span-desk-1">
+                                <h1 class="mt-0 mb-3">Основи фронтенду. 
+                                    HTML та CSS</h1>
+                        
+                                <ul class="linklist">
+                                    <li class="d-flex flex-nowrap mt-h align-items-center">
+                                        <span class="GlobeStand mr-1"></span>
+                                        <span>Мова: українська</span>
+                                    </li>
+
+                                    <li class="d-flex flex-nowrap mt-h align-items-center">
+                                        <span class="BookBookmark mr-1"></span>
+                                        <span>15 уроків</span>
+                                    </li>
+
+                                    <li class="d-flex flex-nowrap mt-h align-items-center">
+                                        <span class="HandsClapping mr-1"></span>
+                                        <span>7 практичних модулів</span>
+                                    </li>
+
+                                    <li class="d-flex flex-nowrap mt-h align-items-center">
+                                        <span class="FilmSlate mr-1"></span>
+                                        <span>12 статей</span>
+                                    </li>
+
+                                    <li class="d-flex flex-nowrap mt-h align-items-center">
+                                        <span class="Timer mr-1"></span>
+                                        <span>Самостійне навчання онлайн у власному темпі</span>
+                                    </li>
+                                </ul>
+
+                                <div class="mt-3 mb-2">
+                                    <a href="#" class="btn-white">Почати навчання</a>
+                                </div>
+
+                                <div class="c-LightestBlue f-small py-1 d-flex flex-nowrap
+                                align-items-center">
+                                    <span class="MagnifyingGlass mr-h"></span>
+                                    <span>скрольте, щоб дізнатись більше</span>
+
+                                </div>
+                            </div>
+
+                            <div class="d-none d-desk-block">
+                                <img class="b-rad-3" src="img/newImages/Illustration.png" width="303" height="335">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="my-tab-3 my-desk-8">
+                <div id="about" class="block-anchor"></div>
+
+                <div class="bg-LightGray bg-tab-transparent">
+
+                    <div class="layout-container">
+
+                        <div class="bg-LightGray b-rad-1 mx-tab-n2 mx-desk-0 px-tab-2 px-desk-0 py-5 py-tab-2 py-desk-6">
+                            <div class="grid grid-cols-1 grid-cols-tab-8 grid-cols-desk-12 align-items-center">
+
+                                <div class="col-span-tab-3 col-start-desk-2">
+                                    <img class="computer-image" src="img/newImages/computer.png" alt="computer-image" width="328" height="297">
+                                </div>
+
+                                <div class="col-span-tab-5 col-span-desk-6 col-start-desk-6">
+                                    <h2 class="mb-3">Про курс</h2>
+
+                                    <p>
+                                        Курс «Основи фронтенду. HTML та CSS» — 
+                                        важливий перший крок для опанування фаху
+                                        фронтенд-розробника. На курсі ми пройдемо
+                                        шлях від знайомства з загальними принципами 
+                                        верстки вебпроєктів до створення адаптивної 
+                                        посадкової сторінки.
+                                    </p>
+
+                                    <h3 class="f-normal mt-3 mb-1 fw-600">Кому стане в пригоді</h3>
+
+                                    <p>
+                                        Вебдизайнерам, веброзробникам, фронтенд-розробникам.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="my-tab-3 my-desk-8">
+                <div id="lecturer" class="block-anchor"></div>
+                <div class="bg-LightestBlue bg-tab-transparent">
+
+                    <div class="layout-container">
+
+                        <div class="bg-tab-LightestBlue b-rad-1 mx-tab-n2 mx-desk-0 px-tab-2 px-desk-0 py-5 py-tab-2 py-desk-6">
+                            <div class="grid grid-cols-1 grid-cols-tab-8 grid-cols-desk-12">
+                            
+                                <div class="col-start-tab-6 col-span-tab-3 col-start-desk-9">
+                                    <img class="suprun-image" src="img/newImages/photo_suprun.png" alt="suprun" width="328" height="374.14">
+                                </div>
+                            
+                                <div class="rows-start-tab-1 col-start-tab-1 col-span-tab-5 col-start-desk-2 col-span-desk-6">
+                                    <h2 class="mb-3">Хто викладає</h2>
+                                
+                                    <h3 class="f-normal mt-3 mb-2 fw-600">Антон Супрун — ведучий розробник CASES та Креативної Практики.</h3>
+                                
+                                    <p>
+                                        Займається фронтенд-розробкою з 2006 року, 
+                                        працював у компанії Ciklum та 11 років був 
+                                        технічним директором та партнером в агенції 
+                                        POPEL Agency, а тепер працює над технічним 
+                                        розвитком соцмережі CASES та освітньої платформи 
+                                        Креативна Практика.
+                                    </p>
+                                
+                                    <p>
+                                        Має понад 15 років досвіду у створенні 
+                                        вебпроєктів — від простих посадкових 
+                                        сторінок до комплексних вебплатформ.
+                                    </p>
+                                
+                                    <p>
+                                        А ще Антон має досвід навчання фронтенду — 
+                                        як ментор і як викладач. Викладав фронтенд 
+                                        в School of Visual Communication.
+                                    </p>
+                                
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="my-3 my-desk-8">
+                <div id="program" class="block-anchor"></div>
+
+                <div class="layout-container">
+
+                    <div class="grid grid-cols-1 grid-cols-desk-12 mb-5">
+                        <div class="col-span-desk-9">
+                            <h2 class="mb-2">Програма курсу</h2>
+
+                            <p>
+                                Цей курс складається з теоретичних 
+                                та практичних модулів. Кожен з модулів 
+                                присвячено конкретній темі. Всі 
+                                матеріали курсу добре структуровані, 
+                                написані простою мовою та викладені послідовно. 
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 grid-cols-desk-2">
+                        <article class="program">
+
+                            <div id="program-theory" class="block-anchor"></div>
+
+                            <h3 class="program-title">Теорія</h3>
+
+                            <div class="program-modules">
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Знайомство з основними тегами</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Вступ до курсу. Що таке HTML та CSS. Теги та їхні типи. Теги для розмітки тексту
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image1.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Робота зі стилями</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Підключення каскадних таблиць стилів CSS та форматування текстів. Робота з таблицями.
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image2.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Блочна модель верстки</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Семантична верстка. Блочна модель. Селектори. Медіа-запити.
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image3.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Флексбокси</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Що таке флексбокси та як з ними працювати. Робота з сітками. Види позиціонування елементів
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image4.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Робота з формами</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Знайомство з усіма елементами форм
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image5.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">GUI</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Підключення нестандартних шрифтів. Що таке GUI і з чого вони складаються
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image6.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Верстка посадкових сторінок</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Огляд процесу верстки посадкових сторінок
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image7.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+
+                            </div>
+
+                        </article>
+
+                        <article class="program">
+
+                            <div id="program-practice" class="block-anchor"></div>
+
+                            <h3 class="program-title">Практика</h3>
+
+                            <div class="program-modules">
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Знайомство з Visual Studio та верстка тексту</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Вже на першій практиці зверстаєте свій перший текст!
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image8.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Підключення стилів та верстка таблиць</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Дізнаєтесь, як додаються стилі та верстаються таблиці
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image9.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Блочна верстка та селектори CSS</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Опануєте основи блочної верстки.
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image10.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Сітки, флексбокси та позиціонування</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Дізнаєтесь, як влаштовано роботу з сітками в вебдизайні, познайомитесь з флексбоксами
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image11.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Створення простої форми</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    Створите форму реєстрації та авторизації!
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image12.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Створення GUI</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    В цьому модулі ви опануєте створення елементарних дизайн-систем.
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image13.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 class="module-title">Створення посадкової сторінки</h4>
+                                            <div class="module-text">
+                                                <p>
+                                                    На завершення курсу ви створите свою першу посадкову сторінку
+                                                </p>
+                                            </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/newImages/image14.png" width="85.33" height="48">
+                                    </div>
+
+                                </article>
+
+                            </div>    
+
+                        </article>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="my-tab-3 my-desk-8">
+
+                <div id="register" class="block-anchor"></div>
+
+                <div class="bg-LightestBlue bg-tab-transparent">
+
+                    <div class="layout-container">
+                        <div class="bg-tab-LightestBlue b-rad-3 py-6">
+
+                            <h2 class="ta-center mb-3">Реєстрація на курсі</h2>
+
+                            <div class="grid grid-cols-1 grid-cols-tab-4 grid-cols-desk-3">
+                                <div class="col-start-tab-2 col-span-tab-2 col-span-desk-1">
+
+                                    <form class="form">
+
+                                        <div class="field">
+                                            <label for="name">Ваше ім’я</label>
+                                            <input id="name" type="text" class="control"
+                                            placeholder="Введіть ваше ім’я">
+                                        </div>
+
+                                        <div class="field">
+                                            <label>Ваші контактні дані</label>
+                                            <input id="email" type="email" class="control"
+                                            placeholder="Введіть e-mail">
+                                        </div>
+
+                                        <div class="field mt-1">
+                                            <input id="phone" type="tel" class="control"
+                                            placeholder="Введіть телефон">
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="region">Ваш регіон</label>
+                                            <select id="region" name="region" class="control">
+                                                <option value="" class="default" selected>Оберіть країну</option>
+                                                <option value="kyiv">Київ</option>
+                                                <option value="kharkiv">Харків</option>
+                                                <option value="odesa">Одеса</option>
+                                                <option value="donetsk">Донецьк</option>
+                                                <option value="zaporizzya">Запоріжжя</option>
+                                                <option value="lviv">Львів</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="field">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                Погоджуюсь з <a href="#">договором оферти</a>
+                                            </label>
+                                        </div>
+
+                                        <div class="ta-center mt-3">
+                                            <button type="submit" class="btn-black">Зареєструватись</button>
+
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="bg-LightGray mt-tab-3 mt-desk-8 py-desk-8 pt-5">
+            <div class="layout-container">
+
+                <div class="grid grid-cols-1 grid-cols-tab-4 grid-cols-desk-6 gy-5 gy-desk-8">
+
+                    <div class="col-span-tab-2">
+                        <h3 class="h4 h-sup c-black mb-3">Інші курси Практики</h3>
+
+                        <ul class="linklist flex flex-col fg-2">
+                            <li>
+                                <a href="https://cases.media/creativepractice/course/figma-basics">Робота з Figma</a>
+                            </li>
+
+                            <li>
+                                <a href="https://cases.media/creativepractice/course/webdesign-basics/about">Основи вебдизайну</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://cases.media/creativepractice/course/webflow-101-crash-course/about">Робота з Webflow</a>
+                            </li>
+
+                            <li>
+                                <a href="https://cases.media/creativepractice/course/ux-ui-design-basics">Проєктування та дизайн інтерфейсів</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="col-span-tab-2">
+                        <h3 class="h4 h-sup c-black mb-3">Корисні посилання</h3>
+
+                        <ul class="linklist flex flex-col fg-2">
+                            <li>
+                                <a class="icon-rarr" href="https://m3.material.io/">
+                                    <span class="mr-1"></span> 
+                                    <span>material.io</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="icon-rarr" href="https://getbootstrap.com/">
+                                    <span class="mr-1"></span>
+                                    <span>getbootstrap.com</span>
+                                </a>    
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="col-start-tab-2 col-span-tab-2 col-start-desk-5">
+                        <form class="form">
+                            <h3 class="h4 h-sup c-black mb-3">Підписка на дайджест</h3>
+
+                            <div class="field">
+                                <input type="email" class="control" placeholder="Ваш e-mail">
+                            </div>
+
+                            <div class="field">
+                                <input type="text" class="control" placeholder="Ваше ім’я">
+                            </div>
+
+                            <div class="mt-2 ta-right">
+                                <button type="submit" class="btn-black">підписатись</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="mt-5 mt-desk-8 d-flex justify-content-between">
+                    <a class="d-block" href="https://cases.media/creativepractice/">
+                        <img src="img/newImages/logo_black.png" width="79" height="36">
+                    </a>
+
+                    <div class="align-self-end">
+                        <div class="flex flex-auto flex-nowrap fg-1">
+                            <a href="#" class="bg-black d-block b-rad-max p-1">
+                                <span class="d-block facebook"></span>
+                            </a>
+
+                            <a href="#" class="bg-black d-block b-rad-max p-1">
+                                <span class="d-block instagram"></span>
+                            </a>
+
+                            <a href="#" class="bg-black d-block b-rad-max p-1">
+                                <span class="d-block cases"></span>
+                            </a>
+
+                            <a href="#" class="bg-black d-block b-rad-max p-1">
+                                <span class="d-block telegram"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,686 @@
+<!doctype html>
+<!-- Kateryna Kolobova — Практика №6— Створення інтерфейсного комплекта -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Практика №6</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui>">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700;800&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="normalize.css-master">
+        <link rel="stylesheet" href="style6.css">
+
+        <style>
+
+            .ui-outline {
+                border: 1px solid #ECECEC;
+            }
+
+            .ui-colors {
+                grid-auto-rows: minmax(140px, auto);
+            }
+
+            .ui-section {
+                margin-bottom: 7rem;
+                
+            }
+            @media screen and (min-width: 721px) {
+                .ui-section {
+                    margin-bottom: 10rem;
+                }
+            }
+
+            .ui-grid > * {
+                color: var(--color-Red);
+                background: var(--color-LightestBlue);
+                padding: 1rem;
+            }
+
+            @media screen and (min-width: 721px) {
+                .ui-grid > * {
+                    padding: 2rem;
+                }
+            }
+
+            .iu-icons > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header class="layout-header">
+            <div class="layout-container">
+
+                <div class="header-wrapper">
+                    <a href="https://cases.media/creativepractice" class="header-logo">
+                        <img src="img/CP-Logo.svg" width="126" height="56" alt="Creative Practice">
+                    </a>
+
+                    <nav class="header-menu">
+                        <ul class="nav">
+                            <li class="d-none d-desk-block">
+                                <a href="#">Про курс</a>
+                            </li>
+
+                            <li class="d-none d-desk-block">
+                                <a href="#">Хто викладає</a>
+                            </li>
+
+                            <li class="dropdown d-none d-desk-block">
+                                <a href="#">Програма курсу</a>
+
+                                <div class="dropdown-wrapper">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Теорія</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Практика</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="dropdown d-desk-none">
+                                <a href="#">Меню</a>
+
+                                <div class="dropdown-wrapper dd-left dd-tab-right">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Про курс</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Хто викладає</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Програма</a>
+                                        </li>
+
+                                        <li class="btn d-tab-none">
+                                            <div>
+                                                <a href="#" class="btn-purple">Зареєструватись</a>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="btn d-none d-tab-block">
+                                <div>
+                                    <a href="#" class="btn-purple">Зареєструватись</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="layout-container">
+            <div class="layout-container">
+
+                <h1 class="mb-3">Інтерфейсний комплект</h1>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Сітка</h2>
+
+                    <h3 class="my-4">Чотири колонки</h3>
+
+                    <div class="d-grid grid grid-cols-4 my-4 ui-grid f-small ta-center">
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-4">.col-span-4</div>
+
+                        <div class="col-span-3">.col-span-3</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-2">.col-span-2</div>
+                        <div class="col-span-2">.col-span-2</div>
+                    </div>
+
+                    <h3 class="d-none d-tab-block my-4">Вісім колонок (планшети і ширше)</h3>
+
+                    <div class="d-none d-tab-grid grid grid-cols-8 my-4 ui-grid f-small ta-center">
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-8">.col-span-8</div>
+
+                        <div class="col-span-7">.col-span-7</div>
+                        <div>&ndash;</div>
+
+                        <div class="col-span-6">.col-span-6</div>
+                        <div class="col-span-2">.col-span-2</div>
+
+                        <div class="col-span-5">.col-span-5</div>
+                        <div class="col-span-3">.col-span-3</div>
+
+                        <div class="col-span-4">.col-span-4</div>
+                        <div class="col-span-4">.col-span-4</div>
+                    </div>
+
+                    <h3 class="d-none d-desk-block my-4">Дванадцять колонок (комп’ютерна версія)</h3>
+
+                    <div class="d-none d-desk-grid grid ui-grid f-small ta-center">
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+
+                        <div class="col-span-12">.col-span-12</div>
+
+                        <div class="col-span-11">.col-span-11</div>
+                        <div>-</div>
+
+                        <div class="col-span-10">.col-span-10</div>
+                        <div class="col-span-2">.col-span-2</div>
+
+                        <div class="col-span-9">.col-span-9</div>
+                        <div class="col-span-3">.col-span-3</div>
+
+                        <div class="col-span-8">.col-span-8</div>
+                        <div class="col-span-4">.col-span-4</div>
+
+                        <div class="col-span-7">.col-span-7</div>
+                        <div class="col-span-5">.col-span-5</div>
+
+                        <div class="col-span-6">.col-span-6</div>
+                        <div class="col-span-6">.col-span-6</div>
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <div class="grid grid-cols-1 grid-cols-desk-12 gy-4">
+                        
+                        <div class="col-span-desk-6" >
+
+                            <h2 class="h4 h-sup mb-4">Типографія</h2>
+
+                            <div class="h1">Заголовок H1</div>
+                            <div class="h2">Заголовок H2</div>
+                            <div class="h3 mb-1">Заголовок H3 </div>
+
+                            <p>
+                                Базовий текст. Курс «Основи фронтенду. HTML та CSS» —
+                                важливий перший крок для опанування фаху фронтенд-розробника.
+                                На курсі ми пройдемо шлях від знайомства з загальними принципами 
+                                верстки вебпроєктів до створення адаптивної посадкової сторінки.
+                            </p>
+
+                            <p>
+                                <em>Похилений нарис.</em>
+                            </p>
+
+                            <div class="h3">Заголовок H3</div>
+
+                            <p>
+                                Базовий текст. Курс «Основи фронтенду. HTML та CSS» —
+                                важливий перший крок для опанування фаху фронтенд-розробника.
+                                На курсі ми пройдемо шлях від знайомства з загальними принципами
+                                верстки вебпроєктів до створення адаптивної посадкової сторінки.
+                            </p>
+
+                            <p class="f-small fw-500">В деяких випадках використовується трохи зменшений текст.</p>
+
+                            <p>
+                                <strong>Також в цьому проєкті передбачено насичену версію текстів.</strong>
+                            </p>
+
+                            <div class="h4 h-sup">Надзаголовок</div>
+
+                            <p>
+                                Використовується для маркування груп елементів в інтерфейсному комплекті.
+                            </p>
+
+                        </div>
+
+                        <div class="col-start-desk-8 col-span-desk-4">
+                            <h2 class="h4 h-sup mb-4">Посилання</h2>
+
+                            <div class="grid grid-cols-2 gy-4">
+                                <div class="col-span-2 col-span-tab-1 col-span-desk-2">
+                                    <h3 class="mb-4">На світлому тлі</h3>
+
+                                    <div class="fw-600 bg-LightestBlue b-rad-1 px-2 py-1">
+                                        <div class="my-1">
+                                            <a href="#">Базовий стан посилання</a>
+                                        </div>
+                                        <div class="my-1">
+                                            <a href="https://google.com.ua">Відвідане посилання</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-span-2 col-span-tab-1 col-span-desk-2">
+                                    <h3 class="mb-4">На темному тлі</h3>
+
+                                    <div class="fw-600 bg-BackgroundBlue b-rad-1 px-2 py-1">
+                                        <div class="my-1">
+                                            <a class="l-dark" href="#">Базовий стан посилання</a>
+                                        </div>
+                                        <div class="my-1">
+                                            <a class="l-dark" href="https://google.com.ua">Відвідане посилання</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-3">Колірна палітра</h2>
+
+                
+                    <div class="grid grid-cols-1 grid-cols-tab-2 grid-cols-desk-4 ui-section
+                    ui-colors ta-center">
+                        <div class="c-black bg-white b-rad-1 ui-outline ac-center">
+                            <div class="fw-600 mb-1">White</div>
+                            <div class="f-small mb-1">#FFFFFF</div>
+                            <div class="f-small">c-white</div>
+                            <div class="f-small">bg-white</div>
+                        </div>
+                        <div class="c-white bg-black b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Black</div>
+                            <div class="f-small mb-1">#000000</div>
+                            <div class="f-small">c-black</div>
+                            <div class="f-small">bg-black</div>
+                        </div>
+                        <div class="c-white bg-gray b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Gray</div>
+                            <div class="f-small mb-1">#7B798A</div>
+                            <div class="f-small">c-gray</div>
+                            <div class="f-small">bg-gray</div>
+                        </div>
+                        <div class="c-black bg-SlightlyLigherGray b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Slightly Ligher Gray</div>
+                            <div class="f-small mb-1">#D1D0D7</div>
+                            <div class="f-small">c-SlightlyLigherGray</div>
+                            <div class="f-small">bg-SlightlyLigherGray</div>
+                        </div>
+                        <div class="c-black bg-LightGray b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Light Gray</div>
+                            <div class="f-small mb-1">#F4F3F6</div>
+                            <div class="f-small">c-LightGray</div>
+                            <div class="f-small">bg-LightGray</div>
+                        </div>
+                        <div class="c-white bg-Blue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Blue</div>
+                            <div class="f-small mb-1">#6480E4</div>
+                            <div class="f-small">c-Blue</div>
+                            <div class="f-small">bg-Blue</div>
+                        </div>
+                        <div class="c-white bg-BrightBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Blue</div>
+                            <div class="f-small mb-1">#3C65FB</div>
+                            <div class="f-small">c-BrightBlue</div>
+                            <div class="f-small">bg-BrightBlue</div>
+                        </div>
+                        <div class="c-white bg-BackgroundBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">BackgroundBlue</div>
+                            <div class="f-small mb-1">#11223D</div>
+                            <div class="f-small">c-BackgroundBlue</div>
+                            <div class="f-small">bg-BackgroundBlue</div>
+                        </div>
+                        <div class="c-white bg-BrightLightBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">BrightLightBlue</div>
+                            <div class="f-small mb-1">#0C7CFF</div>
+                            <div class="f-small">c-BrightLightBlue</div>
+                            <div class="f-small">bg-BrightLightBlue</div>
+                        </div>
+                        <div class="c-white bg-DullLightBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">DullLightBlue</div>
+                            <div class="f-small mb-1">#3675C0</div>
+                            <div class="f-small">c-DullLightBlue</div>
+                            <div class="f-small">bg-DullLightBlue</div>
+                        </div>
+                        <div class="c-black bg-LightestBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">LightestBlue</div>
+                            <div class="f-small mb-1">#EFF5FF</div>
+                            <div class="f-small">c-LightestBlue</div>
+                            <div class="f-small">bg-LightestBlue</div>
+                        </div>
+                        <div class="c-white bg-LightBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">LightBlue</div>
+                            <div class="f-small mb-1">#3E89E1</div>
+                            <div class="f-small">c-LightBlue</div>
+                            <div class="f-small">bg-LightBlue</div>
+                        </div>
+                        <div class="c-white bg-DullBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">DullBlue</div>
+                            <div class="f-small mb-1">#5469B5</div>
+                            <div class="f-small">c-DullBlue</div>
+                            <div class="f-small">bg-DullBlue</div>
+                        </div>
+                        <div class="c-black bg-LightestBrightBlue b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">LightestBrightBlue</div>
+                            <div class="f-small mb-1">#9AB0FF</div>
+                            <div class="f-small">c-LightestBrightBlue</div>
+                            <div class="f-small">bg-LightestBrightBlue</div>
+                        </div>
+                        <div class="c-white bg-Red b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Red</div>
+                            <div class="f-small mb-1">#FF0F0F</div>
+                            <div class="f-small">c-Red</div>
+                            <div class="f-small">bg-Red</div>
+                        </div>
+                        <div class="c-white bg-Violet b-rad-1 ac-center">
+                            <div class="fw-600 mb-1">Violet</div>
+                            <div class="f-small mb-1">#9E6799</div>
+                            <div class="f-small">c-Violet</div>
+                            <div class="f-small">bg-Violet</div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Іконки</h2>
+
+                    <div class="flex flex-auto fgy-4 ui-icons">
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="green-arrow-down"></span>
+                        </div>
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="GlobeStand"></span>
+                        </div>
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="BookBookmark"></span>
+                        </div>
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="HandsClapping"></span>
+                        </div>
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="FilmSlate"></span>
+                        </div>
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="Timer"></span>
+                        </div>
+                        <div class="bg-BackgroundBlue b-rad-1 p-3">
+                            <span class="MagnifyingGlass"></span>
+                        </div>
+                        <div class="bg-LightGray b-rad-1 p-3">
+                            <span class="blue-arrow-down"></span>
+                        </div>
+                        <div class="bg-black b-rad-1 p-3">
+                            <span class="facebook"></span>
+                        </div>
+                        <div class="bg-black b-rad-1 p-3">
+                            <span class="instagram"></span>
+                        </div>
+                        <div class="bg-black b-rad-1 p-3">
+                            <span class="cases"></span>
+                        </div>
+                        <div class="bg-black b-rad-1 p-3">
+                            <span class="telegram"></span>
+                        </div>
+                        <div class="bg-LightGray b-rad-1 p-3">
+                            <span class="Next"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid grid-cols-1 grid-cols-tab-2 grid-cols-desk-3 ta-center ui-section">
+                    <div class="bg-LightestBlue b-rad-1 py-3 px-2">
+                        <div class="f-small mb-1">Синя кнопка</div>
+                        <div>
+                            <a href="#" class="btn-purple">Зареєструватись</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-LightestBlue b-rad-1 py-3 px-2">
+                        <div class="f-small mb-1">Чорна кнопка</div>
+                        <div>
+                            <a href="#" class="btn-black">Зареєструватись</a>
+                        </div>
+                    </div>
+
+                    <div class="c-white bg-BackgroundBlue b-rad-1 py-3 px-2">
+                        <div class="f-small mb-1">Біла кнопка</div>
+                        <div>
+                            <a href="#" class="btn-white">Зареєструватись</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Форми</h2>
+
+                    <div class="grid grid-cols-1 grid-cols-tab-2 gy-4">
+                        <div class="bg-LightestBlue b-rad-1 grid grid-cols-1 grid-cols-desk-6 py-3">
+
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Поле введення</div>
+                                    <label for="name">Ваше ім'я</label>
+                                    <input id="name" type="text" class="control"
+                                    placeholder="Введіть ваше ім'я">
+                                </div>
+
+                                <div class="field error">
+                                    <label for="name-error">Ваше ім'я</label>
+                                    <input id="name-error" type="text" class="control"
+                                    placeholder="Введіть ваше ім'я">
+                                    <p class="error-msg">Текст помилки</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-LightestBlue b-rad-1 grid grid-cols-1 grid-cols-desk-6
+                        py-3">
+                            <div class=" col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Поле вибору</div>
+                                    <label for="region">Ваш регіон</label>
+                                    <select id="region" class="control">
+                                        <option class="default" selected>Оберіть країну</option>
+                                        <option>Україна</option>
+                                        <option>Німеччина</option>
+                                    </select>
+                                </div>
+
+                                <div class="field error">
+                                    <label for="region"> Ваш регіон</label> 
+                                    <select id="region-error" class="control">
+                                        <option class="default">Оберіть регіон</option>
+                                        <option selected>Вангрія</option>
+                                    </select>
+                                    <p class="error-msg">Неправильно заповнене поле</p>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="bg-LightestBlue b-rad-1 grid grid-cols-1 grid-cols-desk-6
+                        py-3">
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Прапорці</div>
+                                    <label>Один прапорець</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Погоджуюсь з <a href="#" class="fw-700">договором оферти</a>
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <label>Набір з кількох прапорців</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Перша опція
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Друга опція
+                                    </label>
+                                </div>
+                                <div class="field error">
+                                    <label>прапорець з помилкою</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        Погоджуюсь з <a href="#" class="fw-700">договором оферти</a>
+                                    </label>
+                                    <p class="error-msg">Щоб відправити форму, вам необхідно погодитись з умовами договору оферти</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-LightestBlue b-rad-1 grid grid-cols-1 grid-cols-desk-6 py-3">
+                            <div class="col-start-desk-2 col-span-desk-4 form px-3 px-desk-0">
+                                <div class="field">
+                                    <div class="f-small align-self-center mb-1">Перемикачі
+                                    </div>
+                                    <label>Набір перемикачів</label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" checked>
+                                        Перший варіант
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio">
+                                        Другий варіант
+                                    </label>
+                                </div>
+                                
+                                <div class="field error">
+                                    <label>Перемикачі з помилкою</label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio-error">
+                                        Перший варіант
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="radio-error">
+                                        Другий варіант
+                                    </label>
+                                    <p class="error-msg">Ми не схвалюємо обраний Вами варіант</p>
+                                </div>
+                            </div>    
+                            
+                        </div>
+
+                    </div>
+                        
+                </section>
+
+                <section class="ui-section">
+                    <h2 class="h4 h-sup mb-4">Компоненти</h2>
+
+                    <div class="grid grid-cols-1 grid-cols-desk-2 g-4">
+
+                        <article class="program">
+                            <h3 class="program-title">Теорія</h3>
+
+                            <div class="program-modules">
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 style="font-family: Rubik;" class="module-title fw-600">Знайомство з основними
+                                        тегами</h4>
+                                        <div class="module-text">
+                                            <p>Вступ до курсу. Що таке HTML та CSS. 
+                                            Теги та їхні типи. Теги для розмітки тексту</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/Image.png" width="172" height="96">
+                                    </div>
+                                </article>
+
+                                <article class="module">
+                                    <div class="module-info">
+                                        <h4 style="font-family: Rubik;" class="module-title fw-600">Робота зі стилями</h4>
+                                        <div class="module-text">
+                                            <p>Підключення каскадних таблиць стилів 
+                                            CSS та форматування текстів. Робота з таблицями.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="module-image">
+                                        <img src="img/Image2.png" width="172" height="96">
+                                    </div>
+                                </article>
+
+                            </div>
+                        </article>
+
+                        <div class="grid grid-cols-1 grid-cols-tab-2 grid-cols-desk-3 g-4">
+                            <div class="col-span-desk-2">
+                                <h3 class="h4 h-sup c-black mb-3">Інші курси практики</h3>
+
+                                <ul class="linklist flex flex-col fg-2">
+                                    <li>
+                                        <a href="https://cases.media/creativepractice/course/figma-basics">Робота з Figma</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cases.media/creativepractice/course/webdesign-basics/about">Основи вебдизайну</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cases.media/creativepractice/course/webflow-basics/about">Робота з Webflow</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cases.media/creativepractice/course/ux-ui-design-basics">Проєктування та дизайн інтерфейсів</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-span-desk-2">
+                                <h3 class="h4 h-sup c-black mb-3">Корисні посилання</h3>
+
+                                <ul class="linklist flex flex-col fg-2">
+                                    <li>
+                                        <a class="icon-rarr" href="https://m3.material.io/">
+                                            <span class="mr-1"></span>
+                                            <span>material.io</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="icon-rarr" href="https://getbootstrap.com/">
+                                            <span class="mr-1"></span>
+                                            <span>getbootstrap.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+
+
+    </body>
+</html>
